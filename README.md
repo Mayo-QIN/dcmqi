@@ -1,6 +1,6 @@
 # dcmqi
 
-A grunt based implementation of ![QIICR/dcmqi](https://github.com/QIICR/dcmqi)
+A grunt based implementation of [QIICR/dcmqi](https://github.com/QIICR/dcmqi)
 
 # Run Docker
 
