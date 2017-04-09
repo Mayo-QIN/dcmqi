@@ -45,3 +45,11 @@ del j
 > *pygrunt*
 >
 > https://github.com/Mayo-QIN/pygrunt
+> 
+# Services from command line
+
+
+```
+curl localhost:9901/rest/service | jq -r
+```
+
