@@ -55,18 +55,6 @@ warnLevel: 3
 warnLevel: 5
 
 
-
-services:
-  - endPoint: segimage2itkimageyml
-    commandLine: ["segimage2itkimage","--inputDICOM", "<inputSEGFileName", "--outputDirectory", "~outputDirName", "-p", "#prefix", "-t", "#outputType"]
-    description: |
-      This tool can be used to convert DICOM Segmentation into volumetric segmentations stored as labeled pixels using research format, such as NRRD or NIfTI, and meta information stored in the JSON file format.
-
-      Output types are `nrrd`, `mhd`, `mha`, `nii`, `nifti`, `hdr`, `img`
-
-    defaults:
-      outputType: nrrd
-
 cli:
   - endPoint: itkimage2paramap
     executable: itkimage2paramap
@@ -74,9 +62,6 @@ cli:
     executable: itkimage2segimage
   - endPoint: paramap2itkimage
     executable: paramap2itkimage
-  # NB: the XML produced by segimage2itkimage is incorrect! see
-  # for details https://github.com/QIICR/dcmqi/issues/230
-  # corrected
   - endPoint: segimage2itkimage
     executable: segimage2itkimage
   - endPoint: tid1500reader
