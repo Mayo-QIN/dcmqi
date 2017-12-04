@@ -6,10 +6,16 @@ A grunt based implementation of [QIICR/dcmqi](https://github.com/QIICR/dcmqi)
 
 ```
 docker pull mayoqin/dcmqi
-docker run --rm -it -p 9901:9901 mayoqin/grunt\
+docker run --rm -it -p 9901:9901 mayoqin/dcmqi
 ```
 
 Visit `localhost:9901`
+
+# Building the docker
+
+```
+docker build . -t mayoqin/dcmqi
+```
 
 # Interact with python
 
